@@ -1,17 +1,22 @@
 @import "tailwindcss";
 
-body{
-    font-family: "poppins" , sans-serif;
-}
-h1,h2{
-    font-family: "Roboto" , sans-serif;
+/* ✅ Tailwind v4.1 dark mode (class based) */
+@variant dark (.dark &);
+
+body {
+  font-family: "Poppins", sans-serif;
 }
 
-@layer utilities{
-    .gradient{
-        background: linear-gradient(-45deg , #121027 , black , rgb(1, 1, 38));
-    }
+h1, h2 {
+  font-family: "Roboto", sans-serif;
 }
+
+@layer utilities {
+  .gradient {
+    background: linear-gradient(-45deg, #121027, black, rgb(1, 1, 38));
+  }
+}
+
 html {
   scroll-behavior: smooth;
 }

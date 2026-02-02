@@ -47,7 +47,7 @@ const Testimonials = () => {
   ]
 
   return (
-    <div id="testimonials" className="w-full h-screen overflow-hidden">
+    <div id="testimonials" className="w-full h-screen overflow-hidden dark:bg-[#000024] bg-zinc-300 dark:text-white text-black">
       
       <motion.div 
         initial={{opacity:0 , y:-40}}
@@ -76,7 +76,7 @@ const Testimonials = () => {
             
             {/* CARD */}
             <div className="sm:w-[25vw] w-[70vw] h-[28vh] sm:h-[15vw] relative">
-              <div className="w-full h-full p-4 bg-zinc-200 rounded-t-3xl rounded-bl-3xl">
+              <div className="w-full h-full p-4 dark:bg-zinc-300 bg-zinc-500 shadow-xl rounded-t-3xl rounded-bl-3xl">
                 <p className="text-black text-sm"
                       //          onMouseEnter={()=>controls.stop()}
                       //         onMouseLeave={()=>controls.start({
@@ -94,7 +94,7 @@ const Testimonials = () => {
 
               {/* IMAGE */}
               <div className="sm:w-[10vw] w-[25vw] h-[25vw] sm:h-[10vw] absolute sm:bottom-[-5vw] bottom-[-12vw] 
-                      sm:left-[6vw] left-[20vw] rounded-full bg-zinc-300 border-2 border-blue-500 border-dashed">
+                      sm:left-[6vw] left-[20vw] rounded-full border-2 border-blue-500 border-dashed">
                 <img
                   className="rounded-full w-full  h-full object-cover"
                   src={item.image}
@@ -108,7 +108,7 @@ const Testimonials = () => {
               <h1 className="text-lg font-semibold">
                 {item.name}
               </h1>
-              <p className="text-zinc-300 font-semibold text-[0.8rem]">
+              <p className="dark:text-zinc-300 font-semibold text-[0.8rem]">
                 {item.role}
               </p>
             </div>

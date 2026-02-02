@@ -1,10 +1,10 @@
 import React from 'react'
-import team from '../assets/team4.png'
+import team from '../assets/team3.png'
 import { motion } from 'framer-motion'
 
 const Hero = () => {
   return (
-    <div id='/' className='w-full bg-black min-h-screen sm:h-screen'>
+    <div id='/' className='w-full dark:bg-[#000024] bg-zinc-300 dark:text-white text-black min-h-screen sm:h-screen'>
         <div className='w-full h-full flex sm:flex-row flex-col items-center p-6'>
 
             <div className="left sm:w-[55vw] sm:h-[80vh]  sm:p-12 flex flex-col justify-center ">
@@ -48,7 +48,7 @@ const Hero = () => {
                             initial={{opacity:0 , y:20}}
                             animate={{opacity:1 , y:0}}
                             transition={{delay:1.6 , duration:0.8}}
-                className='sm:mt-0 mt-10' src={team} alt="" />
+                className='sm:mt-0 mt-10 w-full' src={team} alt="" />
             </div>
         </div>
 

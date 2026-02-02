@@ -19,25 +19,27 @@ const App = () => {
 
   return (
     <>
-    {!introDone && <IntroAnimation onFinish={()=>setIntroDone(true)} />}
+   <div className='w-full min-h-screen dark:bg-red-500 bg-zinc-300'>
+       {!introDone && <IntroAnimation onFinish={()=>setIntroDone(true)} />}
 
-    {introDone && (
-        <div className='relative gradient text-white w-full overflow-hidden'>
-           <CustomeCusor />
-              <ParticlesBackground />
-              <Navbar />
-          <Routes>                   
-              <Route path='/' element={<Home />} />
-              <Route path='/about' element={<About />} />
-              <Route path='/skills' element={<Skills />} />
-              <Route path='/projects' element={<Projects />} />
-              <Route path='/testimonials' element={<Testimonials />} />
-              <Route path='/contact' element={<Contact />} />        
-          </Routes>
-           {/* <Footer /> */}
-      </div>
-    )}
-      
+            {introDone && (
+                <div className='relative gradient text-white w-full overflow-hidden'>
+                  <CustomeCusor />
+                      <ParticlesBackground />
+                      <Navbar />
+                  <Routes>                   
+                      <Route path='/' element={<Home />} />
+                      <Route path='/about' element={<About />} />
+                      <Route path='/skills' element={<Skills />} />
+                      <Route path='/projects' element={<Projects />} />
+                      <Route path='/testimonials' element={<Testimonials />} />
+                      <Route path='/contact' element={<Contact />} />        
+                  </Routes>
+                  {/* <Footer /> */}
+              </div>
+            )}
+   
+    </div>   
 
     </>
   )

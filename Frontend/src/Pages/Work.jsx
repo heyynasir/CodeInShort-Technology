@@ -44,8 +44,8 @@ const Work = () => {
   }, [isInView])
 
   return (
-    <div ref={ref} className='w-full p-5 min-h-[50vh]'>
-      <h1 className='text-5xl font-semibold sm:mt-10 mt-16 text-center'>Work</h1>
+    <div ref={ref} className='w-full dark:bg-[#000024] bg-zinc-300 dark:text-white  p-5 min-h-[50vh]'>
+      <h1 className='text-5xl font-bold sm:mt-10 mt-16 dark:text-white text-black  text-center'>Work</h1>
 
       <div className='flex sm:flex-row flex-col w-full h-full justify-evenly sm:space-y-0 space-y-6 items-center mt-10'>
 

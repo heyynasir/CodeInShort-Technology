@@ -11,9 +11,9 @@ import net from '../assets/net.png'
 
 const Skills = () => {
   return (
-    <div id="skills" className="w-full bg-black min-h-screen text-white">
+    <div id="skills" className="w-full dark:bg-[#000024] bg-zinc-300 dark:text-white text-black min-h-screen">
       <div className="mt-[-4vh] flex flex-col items-center gap-12">
-        <h1 className="sm:text-4xl text-3xl sm:ml-0 ml-8 pt-26 font-bold">
+        <h1 className="sm:text-4xl text-3xl sm:ml-0 ml-8 sm:pt-26 pt-0 font-bold">
           <span className="sm:text-5xl text-4xl  text-blue-600">T</span>echnologies 
           <span className="sm:text-5xl text-4xl"> W</span>e <span className="sm:text-5xl text-4xl"> 
              A</span>re <span className="sm:text-5xl text-4xl text-blue-600">U</span>sed.
@@ -26,7 +26,7 @@ const Skills = () => {
               initial={{opacity:0 , y:60}}
               whileInView={{opacity:1 , y:0}}
               transition={{duration:1 , delay:0.4}}
-              className="sm:w-[25vw] w-[50vw] h-[50vw]  sm:h-[25vw] relative border-2 border-white rounded-full">
+              className="sm:w-[25vw] w-[50vw] h-[50vw]  sm:h-[25vw] relative border-2 dark:border-white rounded-full">
 
             {/* ROTATING WRAPPER */}
             <motion.div
@@ -40,7 +40,7 @@ const Skills = () => {
             >
               {/* BALL 1 */}
              <div className=" sm:w-[8vw] w-[20vw] h-[20vw] sm:h-[8vw] flex justify-center items-center overflow-hidden rounded-full
-                              absolute bg-white/10 backdrop-blur-3xl border border-blue-600 shadow-xl shadow-cyan-500/30
+                              absolute bg-black backdrop-blur-3xl border border-blue-600 shadow-xl shadow-cyan-500/30
                               sm:top-[-4vw] top-[-8vw] sm:left-[8vw] left-[15vw]"
                 >
                   <img
@@ -55,7 +55,7 @@ const Skills = () => {
               {/* BALL 2 */}
               <div
                 className=" sm:w-[8vw] w-[20vw] h-[20vw] sm:h-[8vw] flex justify-center items-center overflow-hidden rounded-full
-                              absolute bg-white/10 backdrop-blur-3xl border border-yellow-400 shadow-xl shadow-yellow-500/30
+                              absolute bg-black backdrop-blur-3xl border border-yellow-400 shadow-xl shadow-yellow-500/30
                               sm:top-[9vw] top-[14vw] sm:left-[-3.5vw] left-[-8vw]">
                   <img className="rounded-full "
                     src={js} alt="" />
@@ -65,7 +65,7 @@ const Skills = () => {
               {/* BALL 3 */}
               <div
                 className="  sm:w-[8vw] w-[20vw] h-[20vw] sm:h-[8vw] flex justify-center items-center overflow-hidden rounded-full
-                              absolute bg-white/10 backdrop-blur-3xl border border-green-400 shadow-xl shadow-green-500/30
+                              absolute bg-black backdrop-blur-3xl border border-green-400 shadow-xl shadow-green-500/30
                               sm:bottom-[-3.5vw] bottom-[-9vw] sm:left-[9vw] left-[15vw]"
                 >
                   <img className="rounded-full "
@@ -75,7 +75,7 @@ const Skills = () => {
               {/* BALL 4 */}
               <div
                 className=" sm:w-[8vw] w-[20vw] h-[20vw] sm:h-[8vw] flex justify-center items-center overflow-hidden rounded-full
-                              absolute bg-white/10 backdrop-blur-3xl border border-green-400 shadow-xl shadow-green-500/30
+                              absolute bg-black backdrop-blur-3xl border border-green-400 shadow-xl shadow-green-500/30
                               sm:bottom-[9vw] bottom-[15vw] sm:left-[20vw] left-[38vw]"
                >
                   <img className="rounded-full w-full"
@@ -92,7 +92,7 @@ const Skills = () => {
               initial={{opacity:0 , y:60}}
               whileInView={{opacity:1 , y:0}}
               transition={{duration:1 , delay:0.4}}
-          className="sm:w-[25vw] w-[50vw] h-[50vw]  sm:h-[25vw] sm:mt-0 mt-20 relative border-2 border-white rounded-full">
+          className="sm:w-[25vw] w-[50vw] h-[50vw]  sm:h-[25vw] sm:mt-0 mt-20 relative border-2 dark:border-white rounded-full">
 
             {/* ROTATING WRAPPER */}
             <motion.div
@@ -106,7 +106,7 @@ const Skills = () => {
             >
               {/* BALL 1 */}
              <div className="sm:w-[8vw] w-[20vw] h-[20vw] sm:h-[8vw] flex justify-center items-center overflow-hidden rounded-full
-                              absolute bg-white/10 backdrop-blur-3xl border border-blue-600 shadow-xl shadow-cyan-500/30
+                              absolute bg-black backdrop-blur-3xl border border-blue-600 shadow-xl shadow-cyan-500/30
                               sm:top-[-4vw] top-[-8vw] sm:left-[8vw] left-[14vw]"
                 >
                   <img
@@ -120,8 +120,8 @@ const Skills = () => {
 
               {/* BALL 2 */}
               <div
-                className="sm:w-[8vw] w-[20vw] h-[20vw] sm:h-[8vw] flex justify-center items-center overflow-hidden rounded-full
-                              absolute bg-white/10 backdrop-blur-3xl border border-yellow-400 shadow-xl shadow-yellow-500/30
+                className="sm:w-[8vw] bg-black w-[20vw] h-[20vw] sm:h-[8vw] flex justify-center items-center overflow-hidden rounded-full
+                              absolute backdrop-blur-3xl border border-yellow-400 shadow-xl shadow-yellow-500/30
                               sm:top-[9vw] top-[14vw] sm:left-[-3.5vw] left-[-7vw]"
                   >
                   <img className="rounded-full "
@@ -131,8 +131,8 @@ const Skills = () => {
 
               {/* BALL 3 */}
               <div
-                className="sm:w-[8vw] w-[20vw] h-[20vw] sm:h-[8vw] flex justify-center items-center overflow-hidden rounded-full
-                              absolute bg-white/10 backdrop-blur-3xl border border-red-500 shadow-xl shadow-red-500/30
+                className="sm:w-[8vw] bg-black w-[20vw] h-[20vw] sm:h-[8vw] flex justify-center items-center overflow-hidden rounded-full
+                              absolute  backdrop-blur-3xl border border-red-500 shadow-xl shadow-red-500/30
                               sm:bottom-[-3.5vw] bottom-[-7vw] sm:left-[9vw] left-[14vw]"
                 >
                   <img className="rounded-full "
@@ -142,7 +142,7 @@ const Skills = () => {
               {/* BALL 4 */}
               <div
                 className="sm:w-[8vw] w-[20vw] h-[20vw] sm:h-[8vw] flex justify-center items-center overflow-hidden rounded-full
-                              absolute bg-white/10 backdrop-blur-3xl border border-purple-600 shadow-xl shadow-purple-500/30
+                              absolute bg-black backdrop-blur-3xl border border-purple-600 shadow-xl shadow-purple-500/30
                               sm:bottom-[9vw] bottom-[14vw] sm:left-[20vw] left-[40vw]"
                >
                   <img className="rounded-full w-full"
@@ -151,6 +151,7 @@ const Skills = () => {
 
              
             </motion.div>
+
           </motion.div>
 
         </div>

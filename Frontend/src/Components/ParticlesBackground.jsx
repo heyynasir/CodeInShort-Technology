@@ -10,7 +10,12 @@ const ParticlesBackground = () => {
 
         let particles = [];
         const particlesCount = 50;
-        const colors = ["rgba(255,255,255,0.7)"]
+            const colors = [
+                            "rgba(0, 255, 255, 0.7)",
+                            "rgba(255, 0, 255, 0.7)",
+                            "rgba(255, 255, 0, 0.7)",
+                            ];
+
 
         class Particle{
                 constructor(){

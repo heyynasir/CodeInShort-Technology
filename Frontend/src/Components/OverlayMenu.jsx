@@ -1,7 +1,8 @@
 import { AnimatePresence , motion } from 'framer-motion'
 import React from 'react'
 import { FiX } from "react-icons/fi";
-import { Link } from 'react-router-dom';
+import DarkMode from './DarkMode';
+
 
 const OverlayMenu = ({isOpen , onClose}) => {
   
@@ -39,6 +40,7 @@ const OverlayMenu = ({isOpen , onClose}) => {
                                 <a href='#services'>Services</a>
                                 <a href='#testimonials'>Testimonials</a>
                                 <a href='#contacts'>Contact Us</a>
+                                <DarkMode />
                                 
                             {/* </motion.div> */}
                     </div>

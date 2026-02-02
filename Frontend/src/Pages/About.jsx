@@ -6,17 +6,17 @@ import { motion } from 'framer-motion'
 
 const About = () => {
   return (
-    <div className='w-full bg-black min-h-screen flex sm:flex-row flex-col sm:pt-[7vw]' id='about'>
+    <div className='w-full dark:bg-[#000024] bg-zinc-300 dark:text-white text-black min-h-screen flex sm:flex-row flex-col sm:pt-[7vw]' id='about'>
 
-      <motion.div className="left sm:w-[50vw] w-full flex items-center p-4 justify-center h-[80vh] sm:h-full">
+      <motion.div className="left sm:block hidden sm:w-[50vw] w-full p-4  h-[80vh] sm:h-full">
           <motion.div
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
         // viewport={{ once: true }} 
-          className=' sm:h-[70vh] sm:w-[60%] w-[80%]  border-2 border-purple-500 rounded-2xl border-blur-2xl   overflow-hidden
-          bg-black/60 backdrop-blur-xl shadow-lg shadow-purple-800/20 transition-all duration-300'>
-              <img className='sm:ml-10 ml-2' src={woman} alt="" />
+          className=' sm:h-[70vh] ml-32 sm:w-[60%] w-[80%]  border-2 border-purple-500 rounded-2xl border-blur-2xl   overflow-hidden
+          dark:bg-black/60 bg-zinc-500 backdrop-blur-xl shadow-xl shadow-purple-800/20 transition-all duration-300'>
+              <img className='ml-6' src={woman} alt="" />
           </motion.div>
       </motion.div>
 
@@ -26,7 +26,7 @@ const About = () => {
                  initial={{ opacity: 0, y: 50 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.8, delay: 0.7 }}
-                  className='bg-zinc-200 p-3 rounded-full sm:mt-2  mt-[7rem sm:ml-0 ml-20 shadow-lg'>
+                  className='bg-zinc-200 p-3 rounded-full sm:mt-2  mt-[4vh] sm:ml-0 ml-20 shadow-lg'>
 
               <p className='font-bold sm:text-xl bg-gradient-to-r from-cyan-700 to-purple-700 
                 bg-clip-text text-transparent'
@@ -58,12 +58,12 @@ const About = () => {
                     <hr className='sm:w-[60%] sm:ml-0 ml-3 w-[90%] mt-4' />
 
                     <div className='flex w-full sm:ml-0 ml-8 gap-6 mt-4 mb-4'>
-                        <div className='sm:w-[14vw] w-[35vw] flex justify-center items-center h-[12vh] bg-zinc-400 rounded-lg'>
+                        <div className='sm:w-[14vw] w-[35vw] flex justify-center items-center shadow-lg h-[12vh] bg-zinc-400 rounded-lg'>
                           <img className='sm:w-20 w-10' src={money} alt="" />
                           <h1 className='text-black sm:mt-3 mt-1 font-semibold leading-4  sm:text-xl'>
                             Money Back Garranty</h1>
                         </div>
-                        <div className='sm:w-[14vw] w-[35vw] flex justify-center items-center h-[12vh] bg-zinc-400 rounded-lg'>
+                        <div className='sm:w-[14vw] w-[35vw] flex justify-center items-center shadow-lg h-[12vh] bg-zinc-400 rounded-lg'>
                               <img className='sm:w-20 w-12' src={support} alt="" />
                               <h1 className='text-black mt-1 font-semibold leading-4 sm:text-xl'>Technical Support</h1>
                         </div>

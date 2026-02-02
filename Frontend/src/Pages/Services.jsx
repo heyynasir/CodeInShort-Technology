@@ -25,12 +25,12 @@ const Services = () => {
 
 
   return (
-    <div id='services' className='w-full  min-h-screen'>
+    <div id='services' className='w-full dark:bg-[#000024] bg-zinc-300 text-white min-h-screen'>
         <motion.h1 
             initial={{opacity:0 , scale:0}}
             whileInView={{opacity:1 , scale:1}}
             transition={{duration:0.5}}
-        className='sm:text-[4rem] text-[3rem] font-semibold text-center pt-20'>Services</motion.h1>
+        className='sm:text-[4rem] text-[3rem] dark:text-white text-black font-semibold text-center pt-20'>Services</motion.h1>
 
         <div className='min-h-[70vh] flex sm:flex-row flex-col flex-wrap justify-evenly items-center'>
             {
