@@ -45,7 +45,7 @@ const Navbar = () => {
 
               <div className=' space-x-4 sm:block hidden '>
                   <a href='#contacts'
-                  className='bg-gradient-to-r  px-4 py-2 rounded-full font-semibold cursor-pointer from-pink-400 to-blue-600'>
+                  className='bg-gradient-to-r from-pink-400 to-blue-600 px-4 py-2 rounded-full font-semibold cursor-pointer '>
                     Reach Out</a>
                     <DarkMode />
               </div>
